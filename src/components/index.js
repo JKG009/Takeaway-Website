@@ -1,0 +1,7 @@
+export { default as Navbar } from "./navbar"
+export { default as Header } from "./header"
+export { default as Main } from "./main"
+export { default as Faqs } from "./faqs"
+export { default as Footer } from "./footer"
+export { default as Notification } from "./notification"
+export { ContactSubtitle, ContactDetails } from "./contact"
