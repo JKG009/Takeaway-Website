@@ -28,11 +28,11 @@ Faqs.Answer = function FaqsAnswer({children, ...restProps}) {
     return <Answer {...restProps}>{children}</Answer>
 }
 
-Faqs.AccordianDiv = function FaqsAccordianDiv({children, ...restProps}) {
-    return <AccordianDiv {...restProps}>{children}</AccordianDiv>
+Faqs.AccordianDiv = function FaqsAccordianDiv({children}) {
+    return <AccordianDiv>{children}</AccordianDiv>
 }
 
-Faqs.AccordianContainer = function FaqsAccordianContainer( {faqData}) {
+Faqs.AccordianContainer = function FaqsAccordianContainer({faqData}) {
     const [active, setActive] = useState(false)
     const toggleActive = () => setActive(!active)
     const { question, answer } = faqData
@@ -43,7 +43,6 @@ Faqs.AccordianContainer = function FaqsAccordianContainer( {faqData}) {
                 <Question>{question}</Question>
                 <Toggle>{active ? "-" : "+"}</Toggle>
             </QuestionContainer>
-            {/* {active && <Answer>{answer}</Answer>} */}
             <Answer active={active}>{answer}</Answer>
         </AccordianContainer>
     )

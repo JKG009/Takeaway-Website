@@ -10,7 +10,6 @@ ReactDOM.render(
     <NotificationContextProvider>
       <App />
     </NotificationContextProvider>
-
   </React.StrictMode>,
   document.getElementById('root')
 );

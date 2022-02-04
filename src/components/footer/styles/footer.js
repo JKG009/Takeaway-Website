@@ -20,7 +20,6 @@ export const Container = styled.div`
 
 export const CompanyTitle = styled.p`
     margin: 0;
-    /* background: red; */
     padding: 0.4rem 0;
 `
 

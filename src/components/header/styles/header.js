@@ -28,7 +28,6 @@ export const ListContainer = styled.ul`
 
     @media (min-width: 945px) {
         margin-left: 1rem;
-        
     }
 `
 
@@ -38,7 +37,6 @@ export const CompanyLogo = styled(Link)`
     text-align: center;
     padding: 0.2rem;
     position: relative;
-    color: #E99C20;
     margin-right: 1rem;
     text-decoration: none;
     
@@ -56,7 +54,6 @@ export const CompanyLogo = styled(Link)`
         margin-right: 2.4rem;
         min-width: 250px;
     }
-
 `
 
 export const Icon = styled.span`
@@ -93,19 +90,12 @@ export const Icon = styled.span`
 
         &::before,
         &::after {
-            content: "";
-            background-color: #E99C20;
             width: 2.4rem;
-            display: inline-block;
-            position: absolute;
-            left: 0;
         }
         &::before {
-            transition: top 0.5s;
             top: -0.8rem;
         }
         &::after {
-            transition: top 0.5s;
             top: 0.8rem;
         }
     }
@@ -135,21 +125,5 @@ export const Hamburger = styled.label`
             top: 1rem;
         }
     }
-    }
-`
-
-export const StyledLink = styled(Link)`
-    text-decoration: none;
-    
-
-    &:focus, &:hover, &:visited, &:link, &:active {
-        color: #E99C20;
-    }
-
-    @media (min-width: 945px) {
-        :hover {
-            color: white;
-            
-        }
     }
 `

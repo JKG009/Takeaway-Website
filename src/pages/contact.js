@@ -3,9 +3,8 @@ import { Faqs, Main } from "../components"
 import MapContainer from "../components/map"
 import { useDeviceWidthContext } from '../contexts/DeviceWidthContext'
 
-
 export default function ContactPage() {
-    const {isLargeDevice, isMediumDevice} = useDeviceWidthContext()
+    const {isLargeDevice} = useDeviceWidthContext()
 
     useEffect(() => {
         window.scrollTo(0, 0)
@@ -35,7 +34,7 @@ export default function ContactPage() {
                     </Main.TextContainer>
                 </div>
                 <div style={{width: `${isLargeDevice ? "70%": "100%"}`, margin: "auto", maxWidth: "800px"}}>
-                <MapContainer />
+                    <MapContainer />
                 </div>
             </Faqs>
         </>

@@ -13,7 +13,7 @@ function MapContainer({google}) {
     return (
                 <Map 
                     google = {google}
-                    style = {{width: "100%", height: "100%", maxWidth:"800px", borderLeft: "1px solid #E99C20", borderRight: "solid 1px #E99C20"}}
+                    style = {{width: "100%", height: "100%", maxWidth:"800px", borderLeft: "1px solid #E99C20", borderRight: "solid 1px #E99C20", boxSizing: "border-box"}}
                     containerStyle = {{
                         height: "70vh",
                         width: `${isLargeDevice ? "70vw" : "100%"}`

@@ -11,12 +11,11 @@ export default function Notification({children, ...restProps}) {
 }
 
 Notification.MessageDiv = function NotificationMessageDiv({children, ...restProps}) {
-    
     return <MessageDiv {...restProps}>{children}</MessageDiv>
 }
 
-Notification.Message = function NotificationMessage({children, ...restProps}) {
-    return <Message {...restProps}>{children}</Message>
+Notification.Message = function NotificationMessage({children}) {
+    return <Message>{children}</Message>
 }
 
 Notification.Button = function NotificationButton({children, ...restProps}) {

@@ -19,6 +19,8 @@ export const TitleContainer = styled.div`
     flex-direction: column;
     justify-content: space-evenly;
     border-bottom: 2px #DF9216 solid;
+    text-shadow: 2px 2px gray, -1px -1px gray;
+    
 
     @media (min-width: 610px) {
         font-size: 1.4rem;
@@ -28,7 +30,6 @@ export const TitleContainer = styled.div`
 export const Title = styled.h1`
     margin: 0;
     margin-left: 1rem;
-    text-shadow: 1px 1px gray, -1px -1px gray;
     line-height: 2rem;
 
     @media (min-width: 610px) {
@@ -46,14 +47,13 @@ export const Subtitle = styled.p`
     font-weight: bold;
     margin-right: 1rem;
     line-height: 1.2rem;
-    text-shadow: 1px 1px gray;
 
     @media (min-width: 610px) {
         line-height: 1.8rem;
         margin-right: 2rem;
     }
     @media (min-width: 945px) {
-        line-height: 2.4rem;
+        line-height: 2rem;
     }
 `
 

@@ -22,7 +22,6 @@ export const MessageDiv = styled.div`
 `
 
 export const Message = styled.h3`
-    /* background: lightblue; */
     margin: 1rem 0;
     padding: 1rem 1.2rem;
 `
@@ -36,9 +35,10 @@ export const Button = styled.button`
     font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
+    transition: all 0.5s;
 
     :hover, :active {
-        background: black;
+        background: grey;
         color: white;
     }
 `

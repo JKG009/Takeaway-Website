@@ -7,7 +7,6 @@ export default function NotificationContainer() {
 
     const handleClick = () => {
         setShowNotification(false)
-        
     }
 
     const preventClick = (e) => {
@@ -18,7 +17,7 @@ export default function NotificationContainer() {
         <Notification onClick={handleClick}>
             <Notification.MessageDiv onClick={preventClick}>
                 <Notification.Message>Currently closed; Open at 5pm.</Notification.Message>
-                <Notification.Button onClick={handleClick}>OK</Notification.Button>
+                <Notification.Button onClick={handleClick}>Got It</Notification.Button>
             </Notification.MessageDiv>
         </Notification>
     )

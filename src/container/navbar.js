@@ -1,7 +1,7 @@
 import React from "react";
 import { Navbar } from "../components";
-import { useNavDisplayContext } from "../contexts/NavDisplayContext";
 import menu from "../components/documents/menu.pdf"
+import { useNavDisplayContext } from "../contexts/NavDisplayContext";
 
 export default function NavbarContainer() {
     const {navShow, setNavShow} = useNavDisplayContext()
@@ -12,7 +12,7 @@ export default function NavbarContainer() {
 
     return (
         <Navbar onClick={showNav} navShow={navShow}>
-            <Navbar.Cross  onClick={showNav}></Navbar.Cross>
+            <Navbar.Cross onClick={showNav} />
             <Navbar.ListContainer>
                 <Navbar.Link onClick={showNav} to="/">
                     <Navbar.ListItem>Home</Navbar.ListItem>

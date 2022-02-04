@@ -17,14 +17,12 @@ export const TitleContainer = styled.div`
     position: relative;
 
     @media (min-width: 610px) {
-        height: 50vh;
         background-position: ${({backgroundPosition}) => backgroundPosition};
     }
 
     @media (min-width: 945px) {
         width: 70vw;
         max-width: 1000px;
-
         margin: auto;
     }
 `
@@ -41,11 +39,15 @@ export const Title = styled.h3`
         font-size: 1.8rem;
         margin-left: 1.8rem;
     }
+
+    @media (min-width: 945px) {
+        font-size: 2.2rem;
+        margin-left: 2.4rem;
+    }
 `
 
 export const AccordianDiv = styled.div`
     border-bottom: 2px #DF9216 solid;
-    /* background: gray; */
 
     @media (min-width: 610px) {
         padding: 1rem 0;
@@ -56,7 +58,6 @@ export const AccordianDiv = styled.div`
     @media (min-width: 945px) {
         width: 70vw;
         max-width: 1000px;
-
         margin: auto;
     }
 `
@@ -77,11 +78,10 @@ export const AccordianContainer = styled.div`
             margin-left: 0.4rem;
         }
     }
+
     @media (min-width: 945px) {
         margin: 0.4rem 0;
     }
-
-
 `
 
 export const QuestionContainer = styled.div`
@@ -109,7 +109,6 @@ export const Question = styled.h4`
     margin: 0.6rem 0.4rem;
     line-height: 1.4rem;
     width: 85%;
-
 `
 
 export const Toggle = styled.div`
@@ -127,6 +126,7 @@ export const Answer = styled.p`
     background: rgba(150, 150, 150, 0.1);
     display: ${({active}) => active ? "block" : "none"};
     animation: fade_in 1.2s;
+    
     @keyframes fade_in {
         0% {
             opacity: 0;
@@ -145,7 +145,6 @@ export const Answer = styled.p`
     }
     @media (min-width: 945px) {
         font-size: 1.2rem;
-        line-height: 1.8rem;
     }
 `
 

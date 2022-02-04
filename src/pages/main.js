@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Main, Navbar } from "../components"
-import FooterContainer from "../container/footer";
+import { FooterContainer } from "../container";
 import { useDeviceWidthContext } from '../contexts/DeviceWidthContext';
 import { articles } from "../data"
 import menu from "../components/documents/menu.pdf"
@@ -68,12 +68,12 @@ export default function MainPage() {
                 <Main.Text>
                     If you would like to try something new, below are some of our most popular dishes that our customers always order. <span style={{color: "#DF9216"}}>Click on the images to get more details.</span> 
                 </Main.Text>
-                <Main.Text gridColumnEnd={"span 2"}>Click <Navbar.Anchor href={menu} target="_blank" style={{padding: "0", fontSize: "1.2rem"}}>here</Navbar.Anchor> to see our full menu.</Main.Text>
+                <Main.Text gridColumnEnd={"span 2"}>Click <Navbar.Anchor href={menu} target="_blank" style={{padding: "0"}}>here</Navbar.Anchor> to see our full menu.</Main.Text>
             </Main.TextContainer>
             {isMediumDevice ? 
                 <Main.GridContainer>
                     {articles.map((article, index) => 
-                        <Main.Article key={index} onClick={() =>  toggleDisplayDetailsOnHover(index)} displayDetail={displayDetail} backgroundImg={article.background}>
+                        <Main.Article key={index} onClick={() => toggleDisplayDetailsOnHover(index)} displayDetail={displayDetail} backgroundImg={article.background}>
                             {displayDetail && articleDisplayed === index && 
                                         <Main.ArticleDetailContainer>
                                             <Main.ArticleTitle>{article.title}</Main.ArticleTitle>

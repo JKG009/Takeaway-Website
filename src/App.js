@@ -1,31 +1,23 @@
-import HeaderContainer from "./container/header";
-import NavbarContainer from "./container/navbar";
-import MainPage from "./pages/main";
-import { NavDisplayProvider } from "./contexts/NavDisplayContext";
-import FaqsPage from "./pages/faq";
-import AboutPage from "./pages/about"
+import { HeaderContainer, NavbarContainer, NotificationContainer } from "./container";
+import { MainPage, FaqsPage, AboutPage, ContactPage } from "./pages";
 import { BrowserRouter, Routes, Route } from "react-router-dom"
-import ContactPage from "./pages/contact";
+import { NavDisplayProvider } from "./contexts/NavDisplayContext";
 import { DeviceWidthProvider } from "./contexts/DeviceWidthContext";
-import NotificationContainer from "./container/notification";
 import { useNotificationContext } from "./contexts/NotificationContext"
-import { useState } from "react";
 
 function App() {
   const { showNotification } = useNotificationContext()
-  const [currentTime, setCurrentTime] = useState(() => {
-    const date = new Date()
-    const time = `${date.getHours()}:${date.getMinutes()}`
-    return time
-  })
+
+  const date = new Date()
+  const currentTime = `${date.getHours()}:${date.getMinutes()}`
   
   return (
     <BrowserRouter>
       <DeviceWidthProvider>
       <NavDisplayProvider>
-        {showNotification && (currentTime > "22:30" || currentTime < "17:00") && <NotificationContainer></NotificationContainer>}
-        <NavbarContainer></NavbarContainer>
-        <HeaderContainer></HeaderContainer>
+        {showNotification && (currentTime > "22:30" || currentTime < "17:00") && <NotificationContainer />}
+        <NavbarContainer />
+        <HeaderContainer />
         <Routes>
           <Route path='/' element={<MainPage />} />
           <Route path="/faqs" element={<FaqsPage />} />

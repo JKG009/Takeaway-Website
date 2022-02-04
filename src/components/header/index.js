@@ -4,8 +4,7 @@ import {
     ListContainer,
     Hamburger,
     CompanyLogo,
-    Icon,
-    StyledLink
+    Icon
 } from "./styles/header"
 
 export default function Header({children}) {
@@ -22,8 +21,4 @@ Header.Hamburger = function HeaderHamburger({...restProps}) {
 
 Header.CompanyLogo = function HeaderCompanyLogo({...restProps}) {
     return <CompanyLogo {...restProps}>Golden Wok</CompanyLogo>
-}
-
-Header.Link = function HeaderLink({children, ...restProps}) {
-    return <StyledLink {...restProps}>{children}</StyledLink>
 }

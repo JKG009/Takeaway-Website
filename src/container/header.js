@@ -1,11 +1,9 @@
 import React from "react";
 import { Header } from "../components";
-import { useNavDisplayContext } from "../contexts/NavDisplayContext";
-import { Link } from "react-router-dom"
-import { useDeviceWidthContext } from "../contexts/DeviceWidthContext"
 import { Navbar } from "../components";
+import { useNavDisplayContext } from "../contexts/NavDisplayContext";
+import { useDeviceWidthContext } from "../contexts/DeviceWidthContext"
 import menu from "../components/documents/menu.pdf"
-
 
 export default function HeaderContainer() {
     const {navShow, setNavShow} = useNavDisplayContext()
@@ -34,10 +32,9 @@ export default function HeaderContainer() {
                     </Navbar.Link>
                 </Header.ListContainer> 
                 :
-                <Header.Hamburger navShow={navShow} onClick={showNav}></Header.Hamburger>
+                <Header.Hamburger navShow={navShow} onClick={showNav} />
             }
             <Header.CompanyLogo to="/"></Header.CompanyLogo>
-
         </Header>
     )
 }
