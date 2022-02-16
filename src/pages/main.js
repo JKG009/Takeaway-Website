@@ -14,7 +14,7 @@ export default function MainPage() {
         setDisplayDetail(!displayDetail)
     }
 
-    const toggleDisplayDetailsOnHover = (i) => {
+    const toggleDisplayDetailsOnClick = (i) => {
         setArticleDisplayed(i)
         setTimeout(() => {
             displayDetail === true && i !== articleDisplayed ? setArticleDisplayed(i) : setDisplayDetail(!displayDetail)
@@ -73,7 +73,7 @@ export default function MainPage() {
             {isMediumDevice ? 
                 <Main.GridContainer>
                     {articles.map((article, index) => 
-                        <Main.Article key={index} onClick={() => toggleDisplayDetailsOnHover(index)} displayDetail={displayDetail} backgroundImg={article.background}>
+                        <Main.Article key={index} onClick={() => toggleDisplayDetailsOnClick(index)} displayDetail={displayDetail} backgroundImg={article.background}>
                             {displayDetail && articleDisplayed === index && 
                                         <Main.ArticleDetailContainer>
                                             <Main.ArticleTitle>{article.title}</Main.ArticleTitle>
