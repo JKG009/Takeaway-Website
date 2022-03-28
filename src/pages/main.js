@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import { Main, Navbar } from "../components"
-import { FooterContainer } from "../container";
 import { useDeviceWidthContext } from '../contexts/DeviceWidthContext';
 import { articles } from "../data"
 import menu from "../components/documents/menu.pdf"

@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react'
 import { Faqs } from '../components'
-import { FooterContainer } from '../container'
 import { faqsData } from '../data'
 
 export default function FaqsPage() {
