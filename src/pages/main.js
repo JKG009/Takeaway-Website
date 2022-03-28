@@ -122,7 +122,6 @@ export default function MainPage() {
                     )}
                 </Main.GridContainer>
             }
-            <FooterContainer />
         </Main>
     )
 }

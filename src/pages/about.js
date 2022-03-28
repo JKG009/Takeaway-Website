@@ -27,7 +27,6 @@ export default function AboutPage() {
                 </Faqs.Text>
             </Faqs>
             <Faqs.TitleContainer background="url(/images/spices.jpg)" />
-            <FooterContainer />
         </>
     )
 }

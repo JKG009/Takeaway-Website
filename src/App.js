@@ -1,4 +1,4 @@
-import { HeaderContainer, NavbarContainer, NotificationContainer } from "./container";
+import { HeaderContainer, NavbarContainer, NotificationContainer, FooterContainer } from "./container";
 import { MainPage, FaqsPage, AboutPage, ContactPage } from "./pages";
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import { NavDisplayProvider } from "./contexts/NavDisplayContext";
@@ -24,6 +24,7 @@ function App() {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/contact-us" element={<ContactPage />} />
         </Routes>
+        <FooterContainer />
       </NavDisplayProvider>
       </DeviceWidthProvider>
     </BrowserRouter>

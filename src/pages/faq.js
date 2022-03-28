@@ -25,7 +25,6 @@ export default function FaqsPage() {
             </Faqs>
             <Faqs.TitleContainer 
                 background="url(/images/question.jpg)" />
-            <FooterContainer />
         </>
     )
 }
