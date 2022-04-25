@@ -20,8 +20,8 @@ Navbar.ListContainer = function NavbarListContainer({children}) {
     return <ListContainer>{children}</ListContainer>
 }
 
-Navbar.ListItem = function NavbarListItem({children}) {
-    return <ListItem >{children}</ListItem>
+Navbar.ListItem = function NavbarListItem({children, ...restProps}) {
+    return <ListItem {...restProps}>{children}</ListItem>
 }
 
 Navbar.Link = function NavbarStyledLink({children, ...restProps}) {

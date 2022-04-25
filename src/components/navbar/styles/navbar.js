@@ -61,7 +61,8 @@ export const ListContainer = styled.ul`
 export const ListItem = styled.li`
     padding: 1rem 2rem;
     transition: color 0.5s;
-    
+    color: ${({currentPage}) => currentPage && "white"};
+
     &:hover, &:active {
         color: white;
     }
