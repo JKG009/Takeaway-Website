@@ -1,70 +1,23 @@
-# Getting Started with Create React App
+# Takeaway Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A basic takeaway website and associated menu I designed for a Chinese Takeaway I worked at.
 
-## Available Scripts
+### Disclaimer
 
-In the project directory, you can run:
+While the Golden Wok is a real shop, this website is only a personal project and should not be used as its information can be out-dated and photos and description seen on the webpage does not reflect the Golden Wok's true products.
 
-### `npm start`
+### Project Description
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Project was made with HTML, CSS and Javascript. Utilizing React, React-Router-Dom and styled-components.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### How to run
 
-### `npm test`
+This project was made using create-react-app. You will need to run it on your localhost using npm start.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Misc Information
 
-### `npm run build`
+Whilst I was working at the takeaway I recieved countless questions, one which was always asked was "do you have a website I can see the menu from?". Tired from answer the question I took this opportunity to work on my front-end web development skill and decided to design a website for the store.  
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+My plan was to use some fake photos as a template for my design before replacing them with real photos that I will take from the store before launching the website. I also planned on learning and setting a up server where customers can order online on the website (as the store was not on any food ordering platform like JustEat) as this was also a common request.  
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Unfortunately, the owner does not wish for an online presence as he believed it would cause more problems than benefit. Therefore I did not proceed as planned as I wanted to proceed to learn React-Redux and the Google Maps API will state an error as I never enabled billing for its use.
